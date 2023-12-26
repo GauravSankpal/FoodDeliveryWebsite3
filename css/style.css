@@ -1,0 +1,173 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  opacity: 1;
+}
+
+/* Navigation section */
+#navbar {
+  display: flex;
+  align-items: center;
+}
+#navbar img {
+  width: 55px;
+  margin: 5px;
+  height: 55px;
+  position: relative;
+  z-index: 1;
+}
+ul {
+  display: flex;
+  margin: auto;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  margin: 50px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+}
+ul li a:hover {
+  background-color: rgb(251, 249, 249);
+  opacity: 0.6;
+  color: black;
+}
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 339px;
+  background: url(../homecover1.jpg) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+#home h1 {
+  margin: 20px;
+  position: relative;
+  z-index: 1;
+}
+#home p {
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+}
+/* Services section */
+#services {
+}
+#services h1 {
+  margin-top: 20px;
+}
+.box-container {
+  display: flex;
+}
+.box {
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.services-logo {
+  height: 100px;
+  width: 100px;
+}
+/* Clients section */
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.logo-container img {
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+}
+#clients {
+  margin-top: 60px;
+}
+#clients::before {
+  content: "";
+  position: absolute;
+  top: 680px;
+  left: 0px;
+  width: 100%;
+  height: 339px;
+  background: url(../ourclientscover.jpg) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Contact us section */
+#contact {
+  margin-top: 90px;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  top: 1019px;
+  left: 0px;
+  width: 100%;
+  height: 339px;
+  background: url(../contactuscover.jpg) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.form-container input {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 34px;
+  width: 550px;
+  text-align: center;
+  border: 2px solid black;
+  color: black;
+}
+.form-container input:hover {
+  background-color: #f7e7e7;
+  color: black;
+}
+#submit-button {
+  width: 205px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 40px;
+}
+.h-secondary {
+  font-size: 25px;
+}
+.center-text {
+  text-align: center;
+}
